@@ -1,0 +1,24 @@
+.boton{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+.enlace{
+    text-decoration: none;
+    color: black;
+}
+.facebook{
+    background-color: blue;
+    color: wheat;
+}
+.youtube{
+    background-color: rgb(255, 0, 0);
+    color: wheat;
+}
+.google{
+    background-color: rgb(111, 211, 141);
+    color: wheat;
+}
