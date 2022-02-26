@@ -1,0 +1,19 @@
+.enlace{
+    text-decoration: none;
+    color: black;
+}
+.boton{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    border: none;
+}
+.facebook{
+    background-color: #0077b6;
+}
+.instagram{
+    background-color: #dc2f02;
+}
+.twitter{
+    background-color: #48cae4;
+}
