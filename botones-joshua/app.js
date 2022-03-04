@@ -25,16 +25,15 @@ const botones = [
   },
 ];
 
+let botonHTML = "";
+
 botones.map((boton) => {
-  const botonTemporal = document.createElement(boton.elementoboton);
-  const enlace = document.createElement(boton.elementoenlace);
-  enlace.href = boton.enlacehref;
-  enlace.innerHTML = boton.textoEnlace;
-
-  enlace.classList.add(...boton.clasesEnlace);
-
-  botonTemporal.classList.add(...boton.clasesBoton);
-
-  botonTemporal.appendChild(enlace);
-  document.querySelector("#contenedor").appendChild(botonTemporal);
+  botonHTML += `
+  <button class = "${boton.clasesBoton.toString().replace(",", " ")}">
+      <a class = "${boton.clasesEnlace.toString().replace(",", " ")}" 
+      href="${boton.enlacehref}">${boton.textoEnlace}</a>
+    </button>
+  `;
 });
+
+document.querySelector("#contenedor").innerHTML = botonHTML;
